@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>ControlTask#5_Macaroons</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="logo">
-            macaroons
+            <a href="#">macaroons</a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Пироженки</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Оформить заказ</a></li>
+                <li><a href="#assortment">Пироженки</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#order">Оформить заказ</a></li>
             </ul>
         </div>
         <div class="phone">+375 (29) 368-98-68</div>
@@ -43,7 +44,7 @@
         </div>
     </div>
 </section>
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about-us">
             <div class="about-us-title">
@@ -96,7 +97,7 @@
         </div>
     </div>
 </section>
-<section class="assortment">
+<section class="assortment" id="assortment">
     <div class="container">
         <h2>Выберите свой макарун</h2>
         <div class="cards">
@@ -152,10 +153,68 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
+<section class="order" id="order">
+    <div class="container">
+        <div class="strawberry-left">
+            <img src="images/strawberry-left.png" alt="strawberry">
+        </div>
+        <div class="order-image">
+            <img src="images/macaroon_order.png" alt="macaroons">
+        </div>
+        <div class="form">
+            <h2>Закажите макарун!</h2>
+            <div class="form-text">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!</div>
+            <label>
+                <div>Ваш выбор</div>
+                <input type="text" placeholder="Напишите, что хотите заказать...">
+            </label>
+            <label>
+                <div>Заполните данные для заказа</div>
+                <input type="text" placeholder="Ваше имя">
+            </label>
+            <label>
+                <input type="tel" placeholder="+375 (__) ___ - __ - __">
+            </label>
+            <div class="order-btn">
+                <button>Оформить заказ</button>
+            </div>
+            <div class="strawberry-right">
+                <img src="images/strawberry-right.png" alt="strawberry">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="logo">
+            <a href="#">macaroons</a>
+        </div>
+        <div class="rights">
+            Все права защищены, 2020
+        </div>
+        <div class="sign-instagram">
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="text-instagram">Мы в Instagram</div>
+        <div class="phone">+375 (29) 368-98-68</div>
+    </div>
+</footer>
+<div class="present-fix">
+    <div class="present">
+        <a href="#">
+            <div class="present-circle">
+                <div class="present-text">Оформите заказ <br>
+                    и получите подарок!</div>
+            </div>
+            <img src="images/present.png" alt="present">
+        </a>
+    </div>
+</div>
 
 </body>
 </html>
