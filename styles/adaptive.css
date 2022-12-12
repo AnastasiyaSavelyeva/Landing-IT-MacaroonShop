@@ -172,7 +172,7 @@
     }
 
     .advantages {
-        grid-column-gap: 20px;
+        grid-column-gap: 10px;
         grid-template-columns: repeat(auto-fit, 156px);
     }
 
@@ -234,7 +234,6 @@
     .strawberry-left {
         left: 50px;
     }
-
 }
 
 @media screen and (max-width: 426px) {
@@ -379,6 +378,5 @@
     .strawberry-left {
         left: 220px;
     }
-
 }
 
