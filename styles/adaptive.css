@@ -1,0 +1,384 @@
+@media screen and (max-width: 1200px) {
+    .advantages, .cards {
+        justify-content: center;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .header .container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .header .logo {
+        grid-column: unset;
+    }
+
+    .menu {
+        justify-self: center;
+    }
+
+    .main {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main-text {
+        padding-top: 0;
+    }
+
+    .main-image {
+        top: -120px;
+    }
+
+    .about-us-title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        max-width: 800px;
+    }
+    .about-us-text {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        max-width: 800px;
+        margin-bottom: 40px;
+    }
+    .about-image {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .about-us {
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .header .phone {
+        display: none;
+    }
+
+    .menu {
+        justify-self: left;
+    }
+
+    .main-image {
+       left: -30px;
+    }
+
+    .about-us-title {
+        max-width: 550px;
+    }
+    .about-us-text {
+        max-width: 670px;
+    }
+
+    .about-image img {
+        width: 302px;
+    }
+
+    .advantages {
+        text-align: center;
+    }
+
+    .advantage-number::before {
+        left: 65px;
+    }
+
+    .order .container {
+        grid-column-gap: unset;
+    }
+
+    .order-image img {
+        max-width: 352px;
+    }
+
+    .form h2, .form-text {
+        width: 406px;
+    }
+
+    .order-image {
+        order: 2;
+        align-self: end;
+        margin-bottom: -100px;
+        margin-left: -80px;
+    }
+
+    .form {
+        order: 1;
+    }
+
+    .strawberry-left {
+        left: 350px;
+        top: 250px;
+    }
+
+    .strawberry-right {
+        right: 120px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main-image {
+        left: 0;
+        top: -50px;
+    }
+
+    .order-image {
+        display: none;
+    }
+
+    .order .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    input, .order-btn button {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-text-title {
+        font-size: 32px;
+    }
+
+    .main-text-description {
+        max-width: 500px;
+    }
+
+    .main-text  {
+        text-align: center;
+    }
+
+    .main-image img {
+        max-width: 250px;
+        margin-top: 50px;
+    }
+
+    .advantages {
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(auto-fit, 156px);
+    }
+
+    .advantage {
+        width: 156px;
+        justify-self: center;
+    }
+    .advantage-number {
+        margin-left: 0;
+    }
+
+    .advantage-text {
+        font-size: 13px;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .advantage-number::before {
+        left: 43px;
+    }
+
+
+    .footer .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-row-gap: 40px;
+        justify-items: center;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .rights {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .sign-instagram {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-bottom: 30px;
+    }
+
+    .text-instagram {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 30px;
+    }
+
+    .footer .phone {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+
+    .strawberry-left {
+        left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .burger {
+        display: block;
+    }
+
+    .main-image img {
+        margin-right: 75px;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .about-us-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    .advantage {
+        width: 156px;
+    }
+
+    .assortment {
+        padding: 100px 0;
+    }
+
+    .assortment h2 {
+        font-size: 30px;
+    }
+
+    .order {
+        padding: 100px 0 77px 0;
+    }
+
+    .order h2 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .form {
+        box-sizing: border-box;
+    }
+
+    .form-text {
+        font-size: 16px;
+        text-align: left;
+        max-width: 344px;
+    }
+
+    label div {
+        text-align: left;
+    }
+
+    input {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .order-btn button {
+        width: 100%;
+    }
+
+    .form h2, .form-text {
+        max-width: 344px;
+    }
+
+    .menu.open {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #eba8b1;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 3;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .main-text-title {
+        margin-bottom: 40px;
+    }
+
+    .main-text-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .main-image img {
+        margin-right: 45px;
+    }
+
+    .strawberry-right {
+        display: none;
+    }
+
+    .strawberry-left {
+        left: 275px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .form h2, .form-text {
+        max-width: 300px;
+    }
+
+    .strawberry-left {
+        left: 220px;
+    }
+
+}
+
