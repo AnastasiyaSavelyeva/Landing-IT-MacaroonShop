@@ -1,14 +1,63 @@
-@media screen and (max-width: 1200px) {
-    .advantages, .cards {
-        justify-content: center;
+@media screen and (max-width: 1380px) {
+    .present::before {
+        width: 60px;
+        height: 60px;
     }
 
-    .container {
-        padding: 0 15px;
+    .present img {
+        width: 35px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .present-fix {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .present-text {
+        padding: 10px;
+        right: 160px;
+        bottom: -88px;
+        font-size: 12px;
+    }
+
+    .present-text::after {
+        bottom: 18px;
     }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1170px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
+    }
+
+    .circle-2 {
+        width: 150px;
+        height: 150px;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 283px);
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 728px;
+    }
+
     .header .container {
         grid-template-columns: auto auto auto;
     }
@@ -17,8 +66,12 @@
         grid-column: unset;
     }
 
+    .header .phone {
+        display: none;
+    }
+
     .menu {
-        justify-self: center;
+        justify-self: left;
     }
 
     .main {
@@ -32,6 +85,10 @@
 
     .main-text {
         padding-top: 0;
+    }
+
+    .main-text-description {
+        margin-bottom: 41px;
     }
 
     .main-image {
@@ -58,47 +115,19 @@
         justify-items: center;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 769px) {
-
-    .header .phone {
-        display: none;
-    }
-
-    .menu {
-        justify-self: left;
-    }
-
-    .main-image {
-       left: -30px;
-    }
-
-    .about-us-title {
-        max-width: 550px;
-    }
-    .about-us-text {
-        max-width: 670px;
-    }
-
-    .about-image img {
-        width: 302px;
-    }
 
     .advantages {
+        grid-template-columns: repeat(2, 220px);
+        justify-content: space-evenly;
         text-align: center;
     }
 
-    .advantage-number::before {
+    .advantage-number {
         left: 65px;
     }
 
-    .order .container {
-        grid-column-gap: unset;
-    }
-
-    .order-image img {
-        max-width: 352px;
+    .advantage-number:after {
+        left: 0;
     }
 
     .form h2, .form-text {
@@ -131,6 +160,11 @@
     .main-image {
         left: 0;
         top: -50px;
+        margin-top: 50px;
+    }
+
+    .main-text-title {
+        font-size: 32px;
     }
 
     .order-image {
@@ -143,59 +177,21 @@
     }
 
     .form {
-        text-align: center;
+        text-align: left;
     }
 
     input, .order-btn button {
         width: 100%;
     }
 
-}
-
-@media screen and (max-width: 600px) {
-
-    .main-text-title {
-        font-size: 32px;
+    .strawberry-right {
+        display: none;
     }
 
-    .main-text-description {
-        max-width: 500px;
+    .strawberry-left {
+        left: 275px;
+        top: 100px;
     }
-
-    .main-text  {
-        text-align: center;
-    }
-
-    .main-image img {
-        max-width: 250px;
-        margin-top: 50px;
-    }
-
-    .advantages {
-        grid-column-gap: 10px;
-        grid-template-columns: repeat(auto-fit, 156px);
-    }
-
-    .advantage {
-        width: 156px;
-        justify-self: center;
-    }
-    .advantage-number {
-        margin-left: 0;
-    }
-
-    .advantage-text {
-        font-size: 13px;
-    }
-
-    .advantage-title {
-        font-size: 18px;
-    }
-
-    .advantage-number::before {
-        left: 43px;
-    }
-
 
     .footer .container {
         grid-template-columns: 1fr;
@@ -232,79 +228,15 @@
     }
 
     .strawberry-left {
-        left: 50px;
+        left: 500px;
+        top: 100px;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 600px) {
 
     .burger {
         display: block;
-    }
-
-    .main-image img {
-        margin-right: 75px;
-    }
-
-    .about {
-        padding: 100px 0;
-    }
-
-    .about-us-title {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
-
-    .about-us-text {
-        font-size: 16px;
-    }
-
-    .advantage {
-        width: 156px;
-    }
-
-    .assortment {
-        padding: 100px 0;
-    }
-
-    .assortment h2 {
-        font-size: 30px;
-    }
-
-    .order {
-        padding: 100px 0 77px 0;
-    }
-
-    .order h2 {
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .form {
-        box-sizing: border-box;
-    }
-
-    .form-text {
-        font-size: 16px;
-        text-align: left;
-        max-width: 344px;
-    }
-
-    label div {
-        text-align: left;
-    }
-
-    input {
-        justify-self: center;
-        width: 100%;
-    }
-
-    .order-btn button {
-        width: 100%;
-    }
-
-    .form h2, .form-text {
-        max-width: 344px;
     }
 
     .menu.open {
@@ -343,14 +275,103 @@
     .menu li {
         margin: 15px 0;
     }
-}
 
-@media screen and (max-width: 376px) {
+    .main-text-description {
+        max-width: 500px;
+    }
 
-    .main-text-title {
+    .main-text  {
+        text-align: center;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .about-us-title {
+        font-size: 30px;
         margin-bottom: 40px;
     }
 
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    .about-image {
+        width: 302px;
+    }
+
+    .advantages {
+        justify-items: center;
+        grid-template-columns: repeat(2, 156px)
+    }
+
+    .advantage {
+        width: 156px;
+    }
+
+    .advantage-number {
+        left:25px;
+    }
+
+    .advantage-text {
+        font-size: 13px;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .assortment {
+        padding: 100px 0;
+    }
+
+    .assortment h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 375px;
+    }
+
+    .order {
+        padding: 100px 0 77px 0;
+    }
+
+    .order h2 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .form {
+        box-sizing: border-box;
+    }
+
+    .form-text {
+        font-size: 16px;
+        text-align: left;
+        max-width: 344px;
+    }
+
+    input {
+       justify-self: center;
+       width: 100%;
+    }
+
+    .order-btn button {
+        width: 100%;
+    }
+
+    .form h2, .form-text {
+        max-width: 344px;
+    }
+
+    .strawberry-left {
+        left: 330px;
+    }
+}
+
+@media screen and (max-width: 423px) {
     .main-text-description {
         font-size: 16px;
         margin-bottom: 40px;
@@ -360,23 +381,19 @@
         margin-right: 45px;
     }
 
-    .strawberry-right {
-        display: none;
-    }
-
     .strawberry-left {
-        left: 275px;
-        top: 100px;
+        left: 270px;
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 374px) {
     .form h2, .form-text {
         max-width: 300px;
     }
 
     .strawberry-left {
-        left: 220px;
+        left: 200px;
     }
 }
+
 
