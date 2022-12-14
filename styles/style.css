@@ -113,6 +113,8 @@ body {
 .main-text {
     padding: 20px 0 38px 0;
     flex-shrink: 0;
+    position: relative;
+    z-index: 4;
 }
 
 .main-text-title {
@@ -434,8 +436,10 @@ body {
 }
 
 .order-image {
+    max-width: 408px;
     align-self: center;
     padding-left: 20px;
+    margin-top: 50px;
 }
 
 .order-image img {

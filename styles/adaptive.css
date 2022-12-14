@@ -123,7 +123,7 @@
     }
 
     .advantage-number {
-        left: 65px;
+        left: 50px;
     }
 
     .advantage-number:after {
@@ -263,7 +263,7 @@
         top: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.9);
-        z-index: 3;
+        z-index: 300;
     }
 
     .menu ul {
@@ -278,6 +278,7 @@
 
     .main-text-description {
         max-width: 500px;
+        margin: 0 auto 40px auto;
     }
 
     .main-text  {
@@ -387,6 +388,12 @@
 
     .strawberry-left {
         left: 270px;
+        width: 72px;
+        height: 89px;
+    }
+
+    .strawberry-left img {
+        width: 100%;
     }
 }
 
@@ -397,6 +404,12 @@
 
     .strawberry-left {
         left: 200px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .about-image {
+        width: 290px;
     }
 }
 
